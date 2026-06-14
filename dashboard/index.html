@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RailSentinel AI - Operator Console</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans p-6">
+    <div class="max-w-7xl mx-auto space-y-6">
+        <header class="flex justify-between items-center border-b border-slate-800 pb-4">
+            <div>
+                <h1 class="text-2xl font-bold tracking-tight text-emerald-400">RAILSENTINEL AI</h1>
+                <p class="text-sm text-slate-400">Autonomous Track Integrity Ecosystem</p>
+            </div>
+            <div class="flex items-center space-x-3">
+                <span class="h-3 w-3 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span class="text-xs font-mono uppercase text-slate-300">Edge Stream Connected</span>
+            </div>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-5 space-y-4">
+                <h2 class="text-sm font-semibold uppercase text-slate-400 tracking-wider">Live System Metrics</h2>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-slate-950 p-3 rounded-lg border border-slate-800">
+                        <p class="text-xs text-slate-400">Forward Scan Range</p>
+                        <p class="text-xl font-mono font-bold mt-1 text-sky-400">2.4 KM</p>
+                    </div>
+                    <div class="bg-slate-950 p-3 rounded-lg border border-slate-800">
+                        <p class="text-xs text-slate-400">LoRa Mesh Signal</p>
+                        <p class="text-xl font-mono font-bold mt-1 text-emerald-400">98%</p>
+                    </div>
+                    <div class="bg-slate-950 p-3 rounded-lg border border-slate-800">
+                        <p class="text-xs text-slate-400">Track Vibration</p>
+                        <p class="text-xl font-mono font-bold mt-1 text-amber-400">1.2 mm/s</p>
+                    </div>
+                    <div class="bg-slate-950 p-3 rounded-lg border border-slate-800">
+                        <p class="text-xs text-slate-400">AI Model Latency</p>
+                        <p class="text-xl font-mono font-bold mt-1 text-indigo-400">14 ms</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:col-span-2 bg-slate-900 border border-slate-800 rounded-xl p-5 flex flex-col justify-between min-h-[300px]">
+                <div class="flex justify-between items-center">
+                    <h2 class="text-sm font-semibold uppercase text-slate-400 tracking-wider">Live Camera Anomaly Feed</h2>
+                    <span class="bg-red-500/10 text-red-400 border border-red-500/20 text-xs px-2.5 py-1 rounded-md font-mono font-bold animate-pulse">WARNING: HIGH-MASS OBSTACLE AHEAD</span>
+                </div>
+                <div class="my-4 bg-slate-950 rounded-lg border border-red-800/50 border-dashed flex flex-col items-center justify-center p-8 grow relative overflow-hidden">
+                    <div class="absolute inset-0 bg-red-500/5"></div>
+                    <div class="text-center space-y-2 relative z-10">
+                        <p class="text-lg font-mono text-red-400 font-bold">[!] VLM EVAL: STRUCTURAL HAZARD AT KM 142.8</p>
+                        <p class="text-sm text-slate-400">LiDAR Confirmation: Positive</p>
+                        <p class="text-xs text-slate-500 mt-4">Autonomous Braking Advisory Sent to Train Operator</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
